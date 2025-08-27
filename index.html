@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+
+    <!-- tailwind cdn -->
+       <script src="https://cdn.tailwindcss.com"></script>
+
+         <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 <body>
-    
+    <!-- Navbar -->
+    <nav class="flex flex-col sm:flex-row items-center justify-between bg-white px-14 py-6">
+      <div class="flex items-center gap-2">
+        <img src="./assets/logo.png" class="h-10 w-10" alt="logo" />
+        <span class="font-bold text-lg text-green-700 leading-tight">
+          Emergency <br class="hidden sm:block" />
+          Service
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <div
+          class="flex items-center gap-1 bg-green-100 px-6 py-2 rounded-full text-black font-bold">
+          <span id="heartCount">0</span>
+          <img src="./assets/heart.png" alt="heart" class="w-5 h-5" />
+        </div>
+
+        <div
+          class="flex items-center gap-1 bg-green-100 px-6 py-2 rounded-full text-black font-bold">
+          <span id="coinCount">100</span>
+          <img src="./assets/coin.png" alt="coin" class="w-5 h-5" />
+        </div>
+
+        <button
+          id="copyMainBtn"
+          class="bg-green-600 text-white px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base">
+          0 Copy
+        </button>
+      </div>
+    </nav>
 </body>
 </html>
